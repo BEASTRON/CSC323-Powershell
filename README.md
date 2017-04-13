@@ -348,6 +348,32 @@ $Computer.Remove("StartupRam")
 $Computer
 
 
+#ISE Objects
+
+dir "C:\User Desktops"
+
+$users = dir "C:\User Desktops"
+
+$users | select * -First 1
+
+$users = dir "C:\User Desktops" | select name
+
+$users | select * -First 1 | Get-Member
+
+$users = dir "C:\User Desktops" | select -ExpandProperty name
+
+foreach($User in $users){
+$FilePath = "C:\User Desktops\$User\Desktop\RDP.link"
+if(Test-Path -Path $FilePath){"File is there"}else{"file is not there"}
+"The current user being Processed is $User."
+}
+
+
+
+
+
+
+
 
 
 
