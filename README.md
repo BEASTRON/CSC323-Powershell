@@ -386,6 +386,19 @@ Get-Command -Module SQLPS
 Get-Command Get-SmbShare
 
 
+#Arrays & Hashtables
+
+$newhires = newhires.csv
+Import-Csv -Path .\newhires.csv | 
+Select-Object -Property * , `
+@{name='samAccountName';expression={$_.netname}}, `
+@{name='GivenName';expression={$_.firstname}}, `
+@{name='Name';expression={$_.lastname}}, `
+# @{name='EmailAddress';expression={$_.emailaddress}} |
+
+
+
+
 
 
 
