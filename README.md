@@ -348,6 +348,20 @@ $Computer.Remove("StartupRam")
 $Computer
 
 
+$Computer = @{}
+$Computer.Add("Name",$env:computername)
+$Computer.add("Networking",(Get-NetIPAddress -InterfaceAlias "Ethernet0"))
+
+$Computer
+$Computer.Name
+$Computer.Networking
+$Computer.Networking.IPAddress
+
+
+
+
+
+
 #ISE Objects
 
 dir "C:\User Desktops"
