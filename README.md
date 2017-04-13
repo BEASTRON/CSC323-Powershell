@@ -241,6 +241,32 @@ $path = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\"
 New-PSDrive -Name HKCuRun -PSProvider Registry -Root $path
 
 
+#Class on March 20, 2017
+
+ $Room = "Hawkins053C"
+
+  $Machine = "01"
+
+  $Target = "$Room-Machine"
+  $Target
+
+
+  Get-Service
+
+  $Service = Get-Service
+
+$Service | Select *
+
+$User = "bvill003"
+$UserFolder = "C:\Users\$user\Documents"
+
+$Files = Get-ChildItem -Path $UserFolder -Recurse -File
+
+
+
+
+
+
 
 
 
