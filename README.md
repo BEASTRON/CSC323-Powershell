@@ -369,6 +369,28 @@ if(Test-Path -Path $FilePath){"File is there"}else{"file is not there"}
 }
 
 
+#Modules
+
+$env:PSModulePath
+
+$env:PSModulePath.Split(",")
+
+Get-Module -ListAvailable
+
+Get-Module
+
+(Get-Module -ListAvailable).count
+
+Get-Command -Module SQLPS
+
+Get-Command Get-SmbShare
+
+
+
+
+
+
+
 
 
 
