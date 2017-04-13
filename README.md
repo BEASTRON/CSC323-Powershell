@@ -228,6 +228,23 @@ do
 until ($x -gt 0)
 
 
+#More Powershell Commands
+
+Get-PSProvider
+
+cd alias:
+
+Get-PSDrive
+
+$path = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\"
+
+New-PSDrive -Name HKCuRun -PSProvider Registry -Root $path
+
+
+
+
+
+
 
 
 
