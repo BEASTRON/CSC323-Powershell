@@ -164,6 +164,17 @@ icacls X:\VMS --% /grant Dom\HVAdmin:(CI)(OI)F
 X:\VMS /grant Dom\HVAdmin:(CI)(OI)F
 
 
+#Ch.5 (Linux Commands)
+
+ps
+
+grep
+
+awk
+
+
+
+
 
 
 
