@@ -263,6 +263,55 @@ $UserFolder = "C:\Users\$user\Documents"
 $Files = Get-ChildItem -Path $UserFolder -Recurse -File
 
 
+#Arrays: April 3, 2017
+
+$arr = 4,6,8,10,12
+
+$arr
+
+$Services = Get-Service
+
+$Services
+
+
+$Computers = "hawk053B-TS", "Hawk053B-01","Hawk053B-00"
+$On = @()
+$Off = @()
+
+
+foreach($Computer in $Computers){
+    if(Test-Connection -ComputerName $Computer -Count 1 -Quiet)
+        $On = $On + $Computer
+    }else{
+        $Off = $Off + $Computer
+}
+
+$Off
+
+
+
+$Computers = Get-ADComputer -Filter 'Name -like"053D*"' | select -ExpandProperty Name
+$On = @()
+$Off = @()
+
+
+foreach($Computer in $Computers){
+    if(Test-Connection -ComputerName $Computer -Count 1 -Quiet){
+        $On = $On + $Computer
+    }else{
+        $Off = $Off + $Computer
+    }
+}
+
+$Off
+
+
+
+
+
+
+
+
 
 
 
