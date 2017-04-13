@@ -213,6 +213,23 @@ Get-Process | Sort-Object -Descending
 Get-Process | Get-Member -MemberType Properties 
 
 
+#Code Snippets
+
+foreach ($item in $collection)
+{
+    
+}
+
+
+do
+{
+    
+}
+until ($x -gt 0)
+
+
+
+
 
 
 
