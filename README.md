@@ -196,6 +196,29 @@ Get-ChildItem C:\Windows -Recurse
 Get-Help about_*
 
 
+#Ch.7
+
+Out-Default
+
+Get-Process | Out-Default
+
+Get-Process | Out-Host
+
+Get-Process
+
+Get-Process | Sort-Object -Property Name
+
+Get-Process | Sort-Object -Descending 
+
+Get-Process | Get-Member -MemberType Properties 
+
+
+
+
+
+
+
+
 
 
 
