@@ -173,6 +173,34 @@ grep
 awk
 
 
+#Ch.6 
+
+Dir | more
+
+Get-Process | Sort-Object -Property CPU -Descending
+
+Get-Process
+
+Get-Process | Get-Member
+
+Get-Help Get-Process -Online
+
+Get-Service -Name *spool*
+
+Get-EventLog -LogName Application
+
+Get-EventLog Application
+
+Get-ChildItem C:\Windows -Recurse
+
+Get-Help about_*
+
+
+
+
+
+
+
 
 
 
