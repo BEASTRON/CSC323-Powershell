@@ -151,6 +151,21 @@ $extoff = "-extoff"
 $url = "www.google.com"
 & $ie $extoff $url
 
+icacls .\docs /grant Chad(CI)(OI)M
+
+icacls .\docs --% /grant Chad(CI)(OI)M
+
+Get-Help about_parsing -ShowWindow
+
+icacls X:\VMS /grant Dom\HVAdmin:`(CI`)`(OI`)F
+
+icacls X:\VMS --% /grant Dom\HVAdmin:(CI)(OI)F
+
+X:\VMS /grant Dom\HVAdmin:(CI)(OI)F
+
+
+
+
 
 
 
