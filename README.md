@@ -306,6 +306,54 @@ foreach($Computer in $Computers){
 $Off
 
 
+#Class on April 10,2017
+
+Get-Printer -ComputerName print-acad | Select -First 2
+
+Get-Printer -ComputerName print-acad
+
+Get-Printer -ComputerName print-acad | Select -Last 10
+
+Get-Printer -ComputerName print-acad | select -First 1 *
+
+Get-Printer -ComputerName print-acad | select *
+
+
+$Printers = Get-Printer -ComputerName print-acad
+$Printers.Count
+
+
+#Hash Tables
+$Computer = @{Name="DC01";OS="Server 2012 R2"}
+$Computer
+
+
+$Computer = [ordered]@{Name="DC01";OS="Server 2012 R2"}
+$Computer
+
+$Computer.OS
+
+
+$Computer.item("OS")
+
+
+$Computer.Name = "DC02"
+
+
+
+$Computer.add("StartupRam","2048MB")
+
+
+$Computer.Remove("StartupRam")
+$Computer
+
+
+
+
+
+
+
+
 
 
 
