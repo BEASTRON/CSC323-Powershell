@@ -413,6 +413,24 @@ Select-Object -Property * , `
 
 
 
+#April 24, 2017
+#Serialization / Deserialization
+
+Get-Service | Export-Clixml -Path MyServices.xml
+$XML = Import-Clixml -Path .\MyServices.xml
+$XML
+
+$XML | select -First 2 *
+
+
+
+notepad .\MyServices.xml
+
+
+
+
+
+
 
 
 
